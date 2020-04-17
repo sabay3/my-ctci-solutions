@@ -1,10 +1,10 @@
 var oneAway = function(str1, str2){
+    if (Math.abs(str1.length - str2.length) > 1) return false; 
+    
     var numOfEdits = false; 
     
     var i = 0;
     var j = 0; 
-    
-    if (Math.abs(str1.length - str2.length) > 1) return false; 
     
     while(i < str1.length && j < str2.length){
         if (str1[i] != str2[j]){
