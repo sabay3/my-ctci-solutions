@@ -1,7 +1,7 @@
 var oneAway = function(str1, str2){
     if (Math.abs(str1.length - str2.length) > 1) return false; 
     
-    var numOfEdits = false; 
+    var edited = false; 
     
     var i = 0;
     var j = 0; 
@@ -13,8 +13,8 @@ var oneAway = function(str1, str2){
             } else if (str2.length < str1.length){
                 j++;
             } 
-            if (numOfEdits) return false; 
-            numOfEdits = true; 
+            if (edited) return false; 
+            edited = true; 
         }
         i++;
         j++;
